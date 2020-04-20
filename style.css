@@ -9,6 +9,7 @@ body
 	width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Patrick Hand', cursive;
 }
 
 
@@ -20,12 +21,15 @@ body
 	color: #ffffff;
 }
 
+
+
 .text {
 	float: left;
 	width: 800px;
 	border: 5px solid #5a6069;
 	border-bottom: transparent;
 	padding: 10px;
+	
 	
 }
 
@@ -52,11 +56,23 @@ body
 	height: 1000px;
 	text-align: left;
 	
+	
 }
 
 .naglowek {
 	
 	margin-left: 10px;
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+.searchbox {
+	position: relative;
+	border: 0px solid #5a6069;
+	border-radius: 50px;
+	box-sizing: border-box;
+	outline: none;
+	
 	
 }
 
@@ -70,6 +86,7 @@ body
 .txtcenter {
 	
  clear: both;
+ margin-left: 10px;
 	
 }
 
