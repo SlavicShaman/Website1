@@ -36,28 +36,34 @@
 	setTimeout("odliczanie()", 1000);
 	
 	}
-	</script>
-	<script>
+
+	var currentSlide = 1;
+
 	
-	var numer = Math.floor(Math.random()*5)+1;
-	function zmienslajd()
+
+	function nextSlide()
 	{
-	
-	numer++;
-	if(numer>5) numer = 1;
-	var plik = "<img src=\"slajdy/slajd" + numer + ".jpeg\" height=\"250\" width=\"380\" />";
-	
-	document.getElementById("right1").innerHTML = plik;
-	
-	setTimeout("zmienslajd()", 5000);
-	
+		if(currentSlide === 5)
+		{
+			currentSlide = 1;
+		}
+		else
+		{
+			currentSlide++;
+		}
+		
+		document.getElementById('myImage').src='slajdy/slajd'+currentSlide+'.jpg'
+		setTimeout("nextSlide()", 1000);
 	}
 	
+	
 	</script> 
+
+	
 	
 	</head>
 
-<body onload = "odliczanie(); zmienslajd();">
+<body onload = "odliczanie();nextSlide()">
 <div id="container">
 
 	<div class="nav">
@@ -100,7 +106,15 @@
 		<p> Czołg – gąsienicowy wóz bojowy, przeznaczony do walki z siłami przeciwnika na krótkich i średnich dystansach za pomocą prowadzenia ognia bezpośredniego. Ciężki pancerz i duża mobilność zapewniają czołgom przetrwanie na polu bitwy, a napęd gąsienicowy pozwala na przemieszczanie się z dużą prędkością w trudnym terenie. Czołg jest zasadniczym środkiem prowadzenia walki lądowej, zwłaszcza natarcia. Większość współczesnych czołgów jest uzbrojonych w pojedynczą armatę czołgową, umieszczoną w obrotowej wieży oraz w jeden lub więcej karabinów maszynowych. Korpus czołgu wykonany jest z pancernych płyt o zróżnicowanej grubości. Pierwsze czołgi nie posiadały wieży, a ich uzbrojenie artyleryjskie było umieszczone w sponsonach, pierwszym czołgiem o klasycznej i używanej obecnie konstrukcji (obrotowa wieża na kadłubie) był francuski Renault FT.</p>
 		</div>
 		
-		<div id="right1"></div>
+		<div id="right1">
+
+
+		<img id="myImage" src="slajdy/slajd1.jpg" width="350" height="300">
+
+
+		
+		</div>
+		
 		
 		<div class="txtcenter">
 		<p class="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien lectus, pellentesque vel ipsum in, tempus tincidunt urna. Nam urna diam, viverra ac dui sed, convallis dignissim quam. Duis consectetur nisi at accumsan accumsan. Sed nec justo tincidunt elit pharetra fringilla. Integer id euismod ex. Proin bibendum, enim et dictum finibus, mauris sapien viverra ante, at pulvinar elit magna nec enim. In hac habitasse platea dictumst. Suspendisse luctus enim a arcu laoreet, et malesuada diam finibus. Quisque commodo sem quis lorem consectetur ornare. Donec quis dolor in dolor semper venenatis eget nec eros. Praesent maximus fringilla finibus. Duis aliquet velit sit amet quam varius feugiat. Quisque ac ex sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tempor euismod maximus. Vivamus condimentum quam vel dolor faucibus, in rutrum felis mollis.Nunc libero urna, euismod eget aliquet ac, eleifend eu mi. Cras bibendum eget nunc nec convallis. Nam imperdiet erat ut mi suscipit, sit amet aliquet tortor iaculis. Cras aliquam tincidunt sem, efficitur vestibulum orci tempus vel. Fusce consequat euismod purus, et molestie ante vehicula quis. Quisque tristique sit amet metus scelerisque porta. Aliquam vitae auctor nibh, sed interdum risus. Donec tempus erat vitae nisi accumsan, quis imperdiet lorem gravida. Morbi pulvinar, odio a pellentesque viverra, enim elit mattis urna, at malesuada sapien dui non magna. Aliquam a ligula pellentesque, viverra odio quis, efficitur felis. Quisque id neque laoreet, volutpat lectus sit amet, pharetra ipsum.Morbi at erat sed dui aliquet luctus hendrerit non ex. Nullam sit amet maximus odio, eget condimentum mauris. Phasellus augue justo, pellentesque non sodales vel, pulvinar ac nisl. Fusce at justo nec massa consectetur iaculis vel vel nunc. In maximus nisi id lectus fermentum feugiat. Sed erat elit, lobortis at lorem ac, fringilla placerat velit. Aliquam cursus metus ante. Nam lacus arcu, mattis ut ligula non, volutpat rutrum metus. Nullam sollicitudin viverra ex nec gravida. Proin bibendum lacus nisi, vel scelerisque nulla tristique non. Vestibulum ullamcorper ultrices tortor, malesuada cursus neque scelerisque a.Phasellus quis suscipit ipsum. Vivamus finibus ipsum neque, eget finibus diam eleifend at. Sed convallis tellus sit amet neque pretium convallis. Nam eget aliquet sem. Nulla laoreet nisl eget tortor blandit, sit amet fermentum dui iaculis. Mauris id enim quis justo facilisis elementum in ac ligula. Etiam placerat porta felis, eget aliquet nibh facilisis facilisis. Maecenas ligula sapien, maximus at scelerisque eget, volutpat in leo.Curabitur pretium nisl id justo ullamcorper, vel bibendum felis aliquet. Donec laoreet neque eu mi tincidunt, quis pretium augue commodo. Duis massa velit, scelerisque et nulla venenatis, molestie malesuada quam. Donec laoreet ut leo a hendrerit. Integer feugiat gravida suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam viverra facilisis lorem sit amet consequat. Nullam vel egestas lacus, eget rutrum ex. Nulla facilisi. Mauris non felis enim. Maecenas ac est mollis, ullamcorper diam tincidunt, commodo nibh. Curabitur vitae ultrices dui, et bibendum augue. Praesent sit amet purus quam. Suspendisse dapibus justo ut consectetur ultrices. Mauris dapibus, ipsum eu gravida lobortis, sapien dolor pretium leo, feugiat auctor erat lacus id mi. Ut nec elit facilisis, commodo neque at, cursus sapien.
@@ -114,85 +128,4 @@
 
 
 </body>
-</html>
-
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-
-
-											
-												
-															
-	
-
-  
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-
-
-
-
-																									
-																														
-																															
-																													
-																												
-																																
-																																		
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-																																			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
-			 
+</html>     
