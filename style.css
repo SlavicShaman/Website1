@@ -19,11 +19,41 @@ body
 	text-align: right;
 	size: 10px;
 	color: #ffffff;
+	margin-bottom: 5px;
+}
+
+.nav {
+	float: right;
+	background-color: #303030;
+	color: white;
+	width: 170px;
+	margin-left: 10px;
+	height: 1000px;
+	text-align: left;
+	
+	
 }
 
 
+.searchbox {
+	position: relative;
+	border: 0px solid #5a6069;
+	border-radius: 50px;
+	box-sizing: border-box;
+	outline: none;
+	
+	
+}
 
-.text {
+.naglowek {
+	
+	margin-left: 10px;
+	font-family: 'Baloo Tammudu 2', cursive;
+	
+}
+
+
+.full_text {
 	float: left;
 	width: 800px;
 	border: 5px solid #5a6069;
@@ -47,34 +77,13 @@ body
 	
 }
 
-.nav {
-	float: right;
-	background-color: #303030;
-	color: white;
-	width: 170px;
-	margin-left: 10px;
-	height: 1000px;
-	text-align: left;
+.txtcenter {
 	
+ clear: both;
+ margin-left: 10px;
 	
 }
 
-.naglowek {
-	
-	margin-left: 10px;
-	font-family: 'Baloo Tammudu 2', cursive;
-	
-}
-
-.searchbox {
-	position: relative;
-	border: 0px solid #5a6069;
-	border-radius: 50px;
-	box-sizing: border-box;
-	outline: none;
-	
-	
-}
 
 #stopka {
 	clear: both;
@@ -83,13 +92,11 @@ body
 	
 }
 
-.txtcenter {
-	
- clear: both;
- margin-left: 10px;
-	
-}
 
-#zegar {
-	margin-bottom: 5px;
+a.navlink {
+	
+	color: #ffffff;
+	text-decoration: none;
+	
+	
 }
