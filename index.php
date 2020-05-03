@@ -22,7 +22,9 @@
 	
 	var dzisiaj = new Date();
 	var dzien = dzisiaj.getDate();
+	if(dzien<10) dzien = "0" + dzien;
 	var miesiac = dzisiaj.getMonth() + 1;
+	if(miesiac<10) miesiac = "0" + miesiac;
 	var rok = dzisiaj.getFullYear();
 	var godzina = dzisiaj.getHours();
 	if(godzina<10) godzina = "0" + godzina;
@@ -31,101 +33,90 @@
 	var sekunda = dzisiaj.getSeconds();
 	if(sekunda<10) sekunda = "0" + sekunda;
 	
-	document.getElementById("zegar").innerHTML = godzina+":"+minuta+":"+sekunda+" "+dzien+"."+miesiac+"."+rok;
+	document.getElementById("clock").innerHTML = godzina+":"+minuta+":"+sekunda+" "+dzien+"."+miesiac+"."+rok;
 	
 	setTimeout("odliczanie()", 1000);
 	
 	}
+		var slideIndex = 1;
+	showDivs(slideIndex);
 
-	var currentSlide = 1;
+	function plusDivs(n) {
+	showDivs(slideIndex += n);
+	}
 
-	
-
-	function nextSlide()
-	{
-		if(currentSlide === 5)
-		{
-			currentSlide = 1;
-		}
-		else
-		{
-			currentSlide++;
-		}
-		
-		document.getElementById('myImage').src='slajdy/slajd'+currentSlide+'.jpg'
-		setTimeout("nextSlide()", 1000);
+	function showDivs(n) {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	if (n > x.length) {slideIndex = 1}
+	if (n < 1) {slideIndex = x.length}
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	}
+	x[slideIndex-1].style.display = "block";  
 	}
 	
 	
+	
 	</script> 
-
+		</head>
 	
 	
-	</head>
-
-<body onload = "odliczanie();nextSlide()">
-<div id="container">
-
-	<div class="nav">
-	<h3> Nawigacja </h3>
+	<body onload="odliczanie()">
+	<div class="wrapper">
 	
-	<div class="searchbox">
-	<form action="usersearch.php" method="post">
-	<input type="text" class="input" placeholder="wyszukiwanie" name="searchquery">
-	</form>
+	<div class="login">
+	<form>
+	Login:<input type="text" name="userlogin"> Hasło: <input type="text" name="userpassword"><input type="submit" value="zaloguj" id="buttton-logowanie" />
+	</form>	
 	</div>
 	
+	
+	
+	<div class="navigation">
+	<div id="clock"></div>
+	<h3> NAWIGACJA </h3>
 	<ul>
-	<li> <a href="czolgi-Iws.php" class="navlink"> Czołgi 1917</a> </li>
-	<li> <a href="czolgi-miedzywojnia.php" class="navlink"> Czołgi 1918-1939 </a> </li>
-	<li> <a href="czolgi1939_45.php" class="navlink"> Czołgi 1939-1945 </a> </li>
-	</ul>
-	Czołgi nowoczesne
-	<ul>
-	<li> <a href="czolgi1gen.php" class="navlink"> I generacja  </a> </li>
-	<li> <a href="czolgi2gen.php" class="navlink"> II generacja </a> </li>
-	<li> <a href="czolgi3gen.php" class="navlink"> III generacja </a> </li>
-	<li> <a href="czolgi4gen.php" class="navlink"> IV generacja </a> </li>
+	<li> Newsy </li>
+	<li> Poradniki </li>
+	<li> Książki </li>
+	<li> Serwery ćwiczebne </li>
 	</ul>
 	</div>
-
-	<div id="logowanie">
-	<form action="userlogged.php" method="get">
-	Login:&#32 <input type="text" id="log" name="userlogin" />	Hasło:&#32 <input type="text" id="pass" name="userpassword" />	<input type="submit" value="zaloguj" id="blogowanie" />
-	</form>
-	</div>
+	
+		<div class="content">
+		<div class="title">
+		Lorem ipsum dolor sit amet
+		</div>
+		<div class="text">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse faucibus lobortis vestibulum. Duis dapibus metus accumsan, condimentum mauris at, bibendum nibh. Integer eget justo interdum, congue ipsum sit amet, efficitur mi. Nulla elementum vestibulum vestibulum. In venenatis, sem vel gravida tristique, dui quam malesuada lacus, nec aliquet quam justo eu ipsum. Quisque odio mauris, pellentesque in metus condimentum, egestas lacinia justo. Nulla vel tellus ac nisi tincidunt rutrum sodales a enim.
+		Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris ac est ac lacus iaculis aliquam eu sed nunc. Nullam iaculis, sem quis semper pellentesque, diam purus condimentum metus, ultrices condimentum velit nulla vel ex. Nunc varius posuere leo, quis sodales magna sollicitudin quis. Proin aliquam, leo eget sodales eleifend, mauris lorem egestas neque, a maximus massa dolor quis nunc. Aenean consectetur sem sed nulla viverra, placerat gravida urna pretium. Donec non est in dui luctus egestas in a quam. Curabitur sapien erat, congue vel dui in, interdum porta neque. Nam sed tempor ipsum, at dapibus libero. Praesent placerat, ex sed scelerisque scelerisque, ligula velit tincidunt sem, vitae gravida magna ante a velit. Etiam molestie neque et iaculis blandit. 
+		</div>
+		
+		<div class="gallery">
+		
+		<img class="mySlides" src="photos/MainGallery/hacker.jpg" width=700px; height=350px;>
+		<img class="mySlides" src="photos/MainGallery/hacker1.jpg" width=700px; height=350px;>
+		<img class="mySlides" src="photos/MainGallery/hacker2.jpg" width=700px; height=350px;>
+		<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+		
+		</div>
 	
 	
-	<div id="zegar"></div>
-		
-
-	<div class="full_text">
-		<h1 class="naglowek"> Czym jest czołg? </h1> </br>
-		
-		<div class="left">
-		<p> Czołg – gąsienicowy wóz bojowy, przeznaczony do walki z siłami przeciwnika na krótkich i średnich dystansach za pomocą prowadzenia ognia bezpośredniego. Ciężki pancerz i duża mobilność zapewniają czołgom przetrwanie na polu bitwy, a napęd gąsienicowy pozwala na przemieszczanie się z dużą prędkością w trudnym terenie. Czołg jest zasadniczym środkiem prowadzenia walki lądowej, zwłaszcza natarcia. Większość współczesnych czołgów jest uzbrojonych w pojedynczą armatę czołgową, umieszczoną w obrotowej wieży oraz w jeden lub więcej karabinów maszynowych. Korpus czołgu wykonany jest z pancernych płyt o zróżnicowanej grubości. Pierwsze czołgi nie posiadały wieży, a ich uzbrojenie artyleryjskie było umieszczone w sponsonach, pierwszym czołgiem o klasycznej i używanej obecnie konstrukcji (obrotowa wieża na kadłubie) był francuski Renault FT.</p>
+	
+	
+	
+	
+	
 		</div>
-		
-		<div id="right1">
-
-
-		<img id="myImage" src="slajdy/slajd1.jpg" width="350" height="300">
-
-
-		
-		</div>
-		
-		
-		<div class="txtcenter">
-		<p class="lorem"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sapien lectus, pellentesque vel ipsum in, tempus tincidunt urna. Nam urna diam, viverra ac dui sed, convallis dignissim quam. Duis consectetur nisi at accumsan accumsan. Sed nec justo tincidunt elit pharetra fringilla. Integer id euismod ex. Proin bibendum, enim et dictum finibus, mauris sapien viverra ante, at pulvinar elit magna nec enim. In hac habitasse platea dictumst. Suspendisse luctus enim a arcu laoreet, et malesuada diam finibus. Quisque commodo sem quis lorem consectetur ornare. Donec quis dolor in dolor semper venenatis eget nec eros. Praesent maximus fringilla finibus. Duis aliquet velit sit amet quam varius feugiat. Quisque ac ex sem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent tempor euismod maximus. Vivamus condimentum quam vel dolor faucibus, in rutrum felis mollis.Nunc libero urna, euismod eget aliquet ac, eleifend eu mi. Cras bibendum eget nunc nec convallis. Nam imperdiet erat ut mi suscipit, sit amet aliquet tortor iaculis. Cras aliquam tincidunt sem, efficitur vestibulum orci tempus vel. Fusce consequat euismod purus, et molestie ante vehicula quis. Quisque tristique sit amet metus scelerisque porta. Aliquam vitae auctor nibh, sed interdum risus. Donec tempus erat vitae nisi accumsan, quis imperdiet lorem gravida. Morbi pulvinar, odio a pellentesque viverra, enim elit mattis urna, at malesuada sapien dui non magna. Aliquam a ligula pellentesque, viverra odio quis, efficitur felis. Quisque id neque laoreet, volutpat lectus sit amet, pharetra ipsum.Morbi at erat sed dui aliquet luctus hendrerit non ex. Nullam sit amet maximus odio, eget condimentum mauris. Phasellus augue justo, pellentesque non sodales vel, pulvinar ac nisl. Fusce at justo nec massa consectetur iaculis vel vel nunc. In maximus nisi id lectus fermentum feugiat. Sed erat elit, lobortis at lorem ac, fringilla placerat velit. Aliquam cursus metus ante. Nam lacus arcu, mattis ut ligula non, volutpat rutrum metus. Nullam sollicitudin viverra ex nec gravida. Proin bibendum lacus nisi, vel scelerisque nulla tristique non. Vestibulum ullamcorper ultrices tortor, malesuada cursus neque scelerisque a.Phasellus quis suscipit ipsum. Vivamus finibus ipsum neque, eget finibus diam eleifend at. Sed convallis tellus sit amet neque pretium convallis. Nam eget aliquet sem. Nulla laoreet nisl eget tortor blandit, sit amet fermentum dui iaculis. Mauris id enim quis justo facilisis elementum in ac ligula. Etiam placerat porta felis, eget aliquet nibh facilisis facilisis. Maecenas ligula sapien, maximus at scelerisque eget, volutpat in leo.Curabitur pretium nisl id justo ullamcorper, vel bibendum felis aliquet. Donec laoreet neque eu mi tincidunt, quis pretium augue commodo. Duis massa velit, scelerisque et nulla venenatis, molestie malesuada quam. Donec laoreet ut leo a hendrerit. Integer feugiat gravida suscipit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam viverra facilisis lorem sit amet consequat. Nullam vel egestas lacus, eget rutrum ex. Nulla facilisi. Mauris non felis enim. Maecenas ac est mollis, ullamcorper diam tincidunt, commodo nibh. Curabitur vitae ultrices dui, et bibendum augue. Praesent sit amet purus quam. Suspendisse dapibus justo ut consectetur ultrices. Mauris dapibus, ipsum eu gravida lobortis, sapien dolor pretium leo, feugiat auctor erat lacus id mi. Ut nec elit facilisis, commodo neque at, cursus sapien.
-		</p>
-		</div>
-		<div id="stopka">This website was created by Piotr Grzadziela 2020 &copy <i class="demo-icon icon-mail"></i> grzadzielapiotr@gmail.com </div>
+	
 	</div>
 	
 
-</div>
+	
+	
 
-
-</body>
-</html>     
+	
+	</body>
+	</html>

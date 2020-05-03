@@ -1,0 +1,55 @@
+.wrapper{
+width: 1000px;
+margin: 0px 200px 0px 200px;
+height: 100%;
+	
+}
+
+.login {
+	padding: 20px;
+}
+
+#clock 
+{
+	font-size: 30px;
+	top: 0px;
+	
+}
+
+.content {
+	float: left;
+	padding: 5px;
+	width: 70%;
+	border: solid black 2px;
+
+
+}
+
+.title {
+	font-size: 250%;
+}
+
+.text {
+	padding: 5px;
+	
+	
+}
+
+.navigation {
+	float: right;
+	text-align: center;
+	height: 500px;
+	border: solid black 2px;
+	width: 20%;
+	
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 0 0 -40px;
+}
+
+.mySlides {
+	display: none;
+}
