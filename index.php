@@ -59,7 +59,7 @@
 	
 	
 	</script> 
-		</head>
+	</head>
 	
 	
 	<body onload="odliczanie()">
@@ -102,20 +102,10 @@
 		<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 		
 		</div>
-	
-	
-	
-	
-	
-	
-	
+			
 		</div>
 	
 	</div>
-	
-
-	
-	
 
 	
 	</body>
