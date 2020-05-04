@@ -19,4 +19,4 @@ Slideshow working thanks to a kind soul.
 I realised that the site was broken. In case of changing anything related to body tag in CSS, the site looked horribly. I am going to write it all over again.
 
 # Day 9 - 03.05.2020
-Uploading a new version of the website. The previous, broken one is moved to trash/broken-prototype-1.
+Uploading a new version of the website. The previous, broken one is moved to trash repository, folder broken-prototype-Website1-version1.
