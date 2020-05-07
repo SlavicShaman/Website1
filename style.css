@@ -1,33 +1,102 @@
-.wrapper{
-width: 1000px;
-margin: 0px 200px 0px 200px;
-height: 100%;
+
+#logo {
+align: center;
+height: 100px;
+max-width:100%;
+border: solid black 2px;
+font-size: 250%;
+text-transform: uppercase;
+text-align: center;
+
+
+}
+
+.wrapper {
+	width: 100%;
+	
+}
+
+
+.title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 24px;
+	
+}
+
+
+.mainmenu {
+	width: 100%;
+	font-size: 24px;
+	background-color: #303030;
+	
+}
+
+ul.menulist {
+	 display: inline-flex;
+	 list-style: none;
 	
 }
 
 .login {
-	padding: 20px;
+	padding-left: 5px;
+	width: 35%;
+	float: left;
+	padding-top: 19px;
 }
 
-#clock 
-{
-	font-size: 30px;
-	top: 0px;
+.nawigacja {
+	float: left;
+	width: 41%;
+	padding: 5px;
+	font-size: 25px;
+	font-stretch: ultra-condensed;
+
+}
+
+li {
+	border: 1px solid black;
+	margin-right: 12px;
+	letter-spacing: 1px;
+	width: 118px;
+	height: 60px;
 	
 }
 
-.content {
+
+
+#clock 
+{
+
 	float: left;
+	padding-top: 10px;
+	font-size: 42px;
+	margin-left: -10px;
+	
+}
+
+
+.container{
+width: 80%;
+margin-right: auto;
+margin-left: auto;
+margin-top: 100px;
+height: 100%;
+	
+}
+
+
+
+
+.content {
+
 	padding: 5px;
-	width: 70%;
 	border: solid black 2px;
+	
 
 
 }
 
-.title {
-	font-size: 250%;
-}
 
 .text {
 	padding: 5px;
@@ -35,13 +104,10 @@ height: 100%;
 	
 }
 
-.navigation {
-	float: right;
-	text-align: center;
-	height: 500px;
-	border: solid black 2px;
-	width: 20%;
-	
+
+
+.mySlides {
+	display: none;
 }
 
 ul {
@@ -50,6 +116,16 @@ ul {
   margin: 0 0 0 -40px;
 }
 
-.mySlides {
-	display: none;
+a.navlink{
+	text-decoration: none;
+	color: black;
+	height: 100%;
+	width: 100%;
+	display: block;
+	width: 118px;
+}
+
+a.navlink:hover {
+	color: #FF8000;
+	
 }
