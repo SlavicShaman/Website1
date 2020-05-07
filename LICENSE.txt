@@ -1,12 +1,12 @@
 Font license info
 
 
-## Elusive
+## Font Awesome
 
-   Copyright (C) 2013 by Aristeides Stathopoulos
+   Copyright (C) 2016 by Dave Gandy
 
-   Author:    Aristeides Stathopoulos
-   License:   SIL (http://scripts.sil.org/OFL)
-   Homepage:  http://aristeides.com/
+   Author:    Dave Gandy
+   License:   SIL ()
+   Homepage:  http://fortawesome.github.com/Font-Awesome/
 
 
