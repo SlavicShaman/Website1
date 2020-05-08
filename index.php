@@ -66,7 +66,7 @@
 
 	<div class="wrapper">
 	
-	<div id="logo">Minimalist </div>
+	<div id="logo"> Minimalist </div>
 	
 	
 	<div class="mainmenu">
@@ -91,9 +91,9 @@
 			</div>
 			
 			<div class="media">
-				<i class="icon-mail" class="media"></i><br>
-				<a href="https://www.youtube.com/watch?v=b3jtkv-GrVw" class="media"><i class="demo-icon icon-facebook-squared"></a></i><br>
-				<a href="https://github.com/SlavicShaman" class="media"><i class="demo-icon icon-github-squared"></a></i>
+				<a href="placeholder" class="medialinks"><i class="icon-mail" class="medialinks"></i></a><br>
+				<a href="https://www.youtube.com/watch?v=b3jtkv-GrVw" class="medialinks"><i class="icon-facebook-squared"></i></a><br>
+				<a href="https://github.com/SlavicShaman" class="medialinks"><i class="icon-github-squared"></i></a>
 			</div>
 
 		
@@ -105,7 +105,7 @@
 
 
 
-	<div class="container">
+
 		<div class="content">
 		<div class="title">
 		Lorem ipsum dolor sit amet
@@ -148,12 +148,14 @@
 		Praesent massa mi, lobortis id hendrerit id, iaculis vel orci. Pellentesque elementum libero at purus aliquam, eu rhoncus augue blandit. Proin lacinia tellus id justo cursus euismod. Sed tincidunt, quam quis sagittis volutpat, ligula dui rutrum dolor, ac euismod turpis mauris ac metus. Pellentesque sagittis euismod leo a imperdiet. Pellentesque congue, sem sed sollicitudin porta, mi leo tempus neque, eu accumsan orci nulla et leo. Vivamus justo justo, scelerisque ac pellentesque eget, rutrum et purus. In metus tortor, placerat ac nibh a, mattis sodales sapien. Nam vitae vulputate tellus, eget efficitur nulla. Integer egestas dui quis ipsum laoreet, a aliquam diam commodo. Vivamus porta ut sem eget tincidunt. Nulla facilisi.
 		</div>
 	
-	</div>
+	
+	
 	
 
 	
 	
 		<footer>Website created by Piotr Grządziela &copy 2020</footer>
+	</div>
 	</div>
 	</body>
 	</html>
