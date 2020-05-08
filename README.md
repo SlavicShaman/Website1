@@ -18,8 +18,8 @@ Slideshow working thanks to a kind soul.
 # Day 13  - 08.04.2020
 I decided that the website has to be rewritten from a scratch. Now it has been moved to the ,,trash" repository.
 I've decided that the new website will be an online newspaper. Now it's quite bare, but it'll change as soon as I grasp some JavaScript. 
-> clock script operational.
-> gallery operational, but not as I imagined it. Needs rework.
-> Code looks awful.
+>> Clock script operational.
+>> Gallery operational, but not as I imagined it. Needs rework.
+>> Code looks awful.
 
 
