@@ -21,5 +21,6 @@ I've decided that the new website will be an online newspaper. Now it's quite ba
   Clock script operational.
   Gallery operational, but not as I imagined it. Needs rework.
   Code looks awful.
+  Sticky menu added and working!
 
 
