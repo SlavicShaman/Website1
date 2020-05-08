@@ -1,26 +1,29 @@
 body 
 {
 background-color: #505050;	
+margin: 0px;
 }
+
 #logo 
 {
 align: center;
 height: 100px;
-max-width:100%;
+width:100%;
 border: solid black 2px;
 font-size: 500%;
 color: white;
 background-color: #303030;
 text-transform: uppercase;
 text-align: center;
-padding-top: 5px;
+padding-bottom: 30px;
+font-family: 'Oswald', sans-serif;
 
 
 }
 
 .wrapper {
 	width: 100%;
-
+	margin: 0px;
 	
 }
 
@@ -37,12 +40,14 @@ padding-top: 5px;
 
 .mainmenu 
 {
+	
 	width: 100%;
 	font-size: 24px;
 	background-color: #303030;
 	height: 81px;
 	color: white;
 	border: 2px solid #D3D3D3;
+	
 	
 	
 }
@@ -67,6 +72,8 @@ ul.menulist
 	
 }
 
+
+
 .nawigacja 
 {
 	float: left;
@@ -80,6 +87,13 @@ ul.menulist
 	width: 650px;
 	
 
+}
+
+ul 
+{
+  list-style-type: none;
+  text-align: center;
+  margin: 0 0 0 -40px;
 }
 
 li 
@@ -97,6 +111,8 @@ li
 	
 	
 }
+
+
 
 
 
@@ -118,7 +134,7 @@ li
 .media 
 {
 	height: 60px;
-	width: 39px;
+	width: 35px;
 	float: right;
 }
 
@@ -136,6 +152,7 @@ li
 	margin-left: auto;
 	border: solid #D3D3D3 2px;
 	border-top: 0;
+	border-bottom: 0;
 	color: white;
 	
 
@@ -145,8 +162,10 @@ li
 
 .text 
 {
-	padding: 5px;
-	text-indent: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	text-indent: 20px;
+	text-align: justify;
 	
 	
 	
@@ -160,12 +179,7 @@ li
 	display: none;
 }
 
-ul 
-{
-  list-style-type: none;
-  text-align: center;
-  margin: 0 0 0 -40px;
-}
+
 
 a.medialinks
 {
@@ -192,12 +206,25 @@ a.navlink
 a.navlink:hover 
 {
 	color: #FF8000;
+	background-color: #414141;
 	
 }
 
-footer 
+.footer 
 {
 	padding-top: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	text-align: center;
+	width: 100%;
+	color: white;
+	background-color: #414141;
+	border-top: 2px solid #D3D3D3;
+}
+
+.sticky {
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 100;
 }
