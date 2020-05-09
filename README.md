@@ -22,5 +22,8 @@ I've decided that the new website will be an online newspaper. Now it's quite ba
   Gallery operational, but not as I imagined it. Needs rework.
   Code looks awful.
   Sticky menu added and working!
+  
+  # Day 14 - 9.04.2020
+  Expandable menu added to list ,,Poradniki". Working well.
 
 
