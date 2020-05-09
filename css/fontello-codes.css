@@ -1,4 +1,5 @@
 
-.icon-mail:before { content: '\e800'; } /* '' */
+.icon-search:before { content: '\e800'; } /* '' */
+.icon-mail:before { content: '\e801'; } /* '' */
 .icon-github-squared:before { content: '\f300'; } /* '' */
 .icon-facebook-squared:before { content: '\f308'; } /* '' */

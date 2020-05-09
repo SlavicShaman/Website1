@@ -1,7 +1,10 @@
+/* landing page */
+
 body 
 {
 background-color: #505050;	
 margin: 0px;
+user-select: none;
 }
 
 #logo 
@@ -96,7 +99,7 @@ ul
   margin: 0 0 0 -40px;
 }
 
-li 
+ul > li 
 {
 
 	margin-left: 5px;
@@ -112,7 +115,53 @@ li
 	
 }
 
+ul > li > ul
+{
+	display: none;
+}
 
+ul > li:hover > ul
+{
+	display: block;
+}
+
+ul > li > ul > li 
+{
+	margin-left: 5px;
+	letter-spacing: 1px;
+	width: 120x;
+	height: 60px;
+	align: center;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 60px;
+	border: 1px solid #D3D3D3;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	z-index: 100;
+	
+	
+}
+
+ul > li > ul > li > a
+{
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	display: block;
+	width: 120x;
+	height: 60px;
+	align: center;
+	background-color: #303030;
+}
+
+ul > li > ul > li > a:hover
+{
+	color: #FF8000;
+	background-color: #414141;
+}
 
 
 
@@ -134,8 +183,9 @@ li
 .media 
 {
 	height: 60px;
-	width: 35px;
+	width: 45px;
 	float: right;
+	border-right: 0;
 }
 
 
@@ -187,7 +237,7 @@ a.medialinks
 	color: white;
 	padding-left: auto;
 	padding-right: auto;
-	width: inherit;
+	width: 40px;
 
 
 }
@@ -228,3 +278,15 @@ a.navlink:hover
 	top: 0;
 	z-index: 100;
 }
+
+/* shop subsite */
+
+.shop-wrapper 
+{
+	margin: 0;
+	padding: 0;
+	color: white;
+	width: 100%;
+	
+}
+

@@ -3,14 +3,15 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Strona główna</title>
-	<meta name="description" content="Czołgi z całego świata" />
-	<meta name="keywords" content="czołgi, pojazdy opancerzone, wojsko" />
+	<meta name="description" content="Wiadomości z pierwszej ręki" />
+	<meta name="keywords" content="newspaper, gazeta, news, wiadomości" />
 	<meta http-equiv="X-UA-Compatibile" content="IE=edge,chrome=1" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	<link rel="stylesheet" href="css/fontello.css" type="text/css" />
 	<link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@800&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+
 </head>
 	
 	
@@ -35,9 +36,16 @@
 			<div class="nawigacja">
 			<ul class="menulist">
 			<li><a href="gallery.php" class="navlink" target="_blank"> Newsy </a></li>
-			<li><a href="gallery.php" class="navlink" target="_blank"> Poradniki  </a></li>
+			<li><a href="gallery.php" class="navlink" target="_blank"> Poradniki  </a>
+				<ul>
+					<li><a href="#">Pierwszy</a></li>
+					<li><a href="#">Drugi</a></li>
+					<li><a href="#">Trzeci</a></li>
+					<li><a href="#">Czwarty</a></li>
+					</ul>
+			</li>
 			<li><a href="gallery.php" class="navlink" target="_blank"> Książki  </a></li>
-			<li><a href="gallery.php" class="navlink" target="_blank"> Ćwiczenia </a></li>
+			<li><a href="shopmain.php" class="navlink" target="_blank"> Sklep </a></li>
 			<li><a href="gallery.php" class="navlink" target="_blank">Galeria</a> </li>
 			</ul>
 			</div>
@@ -109,9 +117,9 @@
 	<div class="footer">Website created by Piotr Grządziela &copy 2020</div>
 	</div>
 	
-	<script src="jquery.min-3.5.1.js"></script>
+	<script src="js/jquery.min-3.5.1.js"></script>
 	<script src="js/clock.js"></script>
-	<script src="sticky.js"></script>
+	<script src="js/sticky.js"></script>
 	
 	
 	</body>
