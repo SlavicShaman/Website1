@@ -1,4 +1,3 @@
-<!DOCTYPE HTML>
 <html lang="pl">
 <head>
 	<meta charset="utf-8" />
@@ -23,9 +22,9 @@
 	
 	
 	<div class="mainmenu">
-		<div class="login">
-		<a href="#" class="logowanie">Logowanie</a>
-		<a href="#" class="logowanie">Zarejestruj się</a>
+		<div class="landing-site-login-form">
+		<a href="loginsite.php" class="link-do-logowania">Logowanie</a>
+		<a href="#" class="link-do-logowania">Zarejestruj się</a>
 			
 		</div>
 			<div id="clock"></div>		

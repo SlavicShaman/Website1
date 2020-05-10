@@ -4,6 +4,7 @@ body
 {
 background-color: #505050;	
 margin: 0px;
+padding: 0;
 user-select: none;
 }
 
@@ -26,6 +27,7 @@ font-family: 'Oswald', sans-serif;
 
 .wrapper {
 	width: 100%;
+
 	margin: 0px;
 	 background-image: url("photos/oriental-tiles.png") /* Background pattern from Toptal Subtle Patterns */
 	
@@ -63,7 +65,7 @@ ul.menulist
 	
 }
 
-.login 
+.landing-site-login-form
 {
 
 	width: 470px;
@@ -78,7 +80,7 @@ ul.menulist
 
 }
 
-a.logowanie
+a.link-do-logowania
 {
 	
 	text-decoration: none;
@@ -100,7 +102,7 @@ a.logowanie
 
 
 
-a.logowanie:hover 
+a.link-do-logowania:hover 
 {
 	color: #FF8000;
 	background-color: #414141;
@@ -329,5 +331,49 @@ a.navlink:hover
 	align: center;
 	text-align: center;	
 	
+	
+}
+
+/* login subsite (.wrapper inherited from landing site */
+
+.loginsite-wrapper
+{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding-top: 200px;
+	background-image: url("photos/oriental-tiles.png");
+	
+}
+
+
+.loginsite-content
+{	
+
+	
+
+	width: 400px;
+	padding: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	align: center;
+	padding-top: 100px;
+	background-color: #303030;
+	color: white;
+	border: solid 5px #FF8000;
+	-webkit-box-shadow: 0px 0px 13px 20px rgba(255,166,76,1);
+	-moz-box-shadow: 0px 0px 13px 20px rgba(255,166,76,1);
+	box-shadow: 0px 0px 13px 20px rgba(255,166,76,1);
+}
+
+input
+{
+width: 300px;
+font-size: 30px;
+background-color: #efefef;
+color: #666;
+border: 2px solid #ddd;
+border-radius: 5px;
+padding: 10px;	
 	
 }
