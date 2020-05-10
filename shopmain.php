@@ -17,9 +17,16 @@
 	
 	<body>
 	<div class="shop-wrapper">
-	<div class="shop-searchbtn">
+	
+	<div class="shop-search">
+	
+	<form>
+	<input type="text" name="shop-searchquery" placeholder="Czego szukasz?" size=25 />
+	<form>
 	<i class="icon-search"></i>
+	
 	<div>
+	
 	<div>
 
 

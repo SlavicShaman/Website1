@@ -24,11 +24,8 @@
 	
 	<div class="mainmenu">
 		<div class="login">
-		<form>
-	
-		Login: <input type="text" name="userlogin"> Hasło: <input type="text" name="userpassword"><input type="submit" value="zaloguj" id="buttton-logowanie" />
-		
-		</form>
+		<a href="#" class="logowanie">Logowanie</a>
+		<a href="#" class="logowanie">Zarejestruj się</a>
 			
 		</div>
 			<div id="clock"></div>		
