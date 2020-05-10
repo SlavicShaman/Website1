@@ -26,7 +26,7 @@ I've decided that the new website will be an online newspaper. Now it's quite ba
 # Day 14 - 9.05.2020
 Expandable menu added to list ,,Poradniki" and media links. Working well.
 
-# Day 15 - 15.05.2020
-Made ,,Log in" and ,,Sign in" buttons instead of a form - this process is going to be located on another subsite when the database is set up properly.
+# Day 15 - 10.05.2020
+Made ,,Log in" and ,,Sign in" buttons instead of a form - this process is going to be located in another subsite(loginsite.php) when the database is set up properly.
 Changed the background a bit, just to make it more fancy.
 Added a shop subsite for further database practice when the time comes.
