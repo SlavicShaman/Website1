@@ -24,7 +24,7 @@
 	<div class="mainmenu">
 		<div class="landing-site-login-form">
 		<a href="loginsite.php" class="link-do-logowania">Logowanie</a>
-		<a href="#" class="link-do-logowania">Zarejestruj się</a>
+		<a href="signinform.php" class="link-do-logowania">Zarejestruj się</a>
 			
 		</div>
 			<div id="clock"></div>		

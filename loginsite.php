@@ -18,21 +18,21 @@
 <form>
 Login: 
 
-</ br></ br>
+</ br></ br></br></br>
 
-<input type="text">  </ br>
+<input class="loginsite-input" type="text">  </ br></br></br>
 
 
 
 Hasło:
 
-</ br></ br>
+</ br></ br></br></br>
  
-<input type="password"> </br>
+<input class="loginsite-input"  type="password"> </br></br>
 
-</br></br>
+</br>
 
-<input type="submit" value="zaloguj się">
+<input class="loginsite-input"  type="submit" value="zaloguj się">
 </form>
 
 </div>
