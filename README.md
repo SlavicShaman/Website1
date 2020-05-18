@@ -30,3 +30,7 @@ Expandable menu added to list ,,Poradniki" and media links. Working well.
 Made ,,Log in" and ,,Sign in" buttons instead of a form - this process is going to be located in another subsite(loginsite.php) when the database is set up properly.
 Changed the background a bit, just to make it more fancy.
 Added a shop subsite for further database practice when the time comes.
+
+
+# Day 23 = 18.05.2020
+Log in and sign in subsites done. No database, though.
